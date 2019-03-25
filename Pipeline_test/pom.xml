@@ -100,12 +100,12 @@
     </profiles>
   
   <properties>
-      <wl.host>itmplxdev1.aepsc.com</wl.host>
-      <wl.port>7002</wl.port>
-      <wl.targets>ManagedServer1</wl.targets>
+      <wl.host>localhost</wl.host>
+      <wl.port>9001</wl.port>
+      <wl.targets>AdminServer</wl.targets>
 	  <wl.repository>POC_1</wl.repository>
 	  <wl.source>Pipeline_test</wl.source>
-      <wl.location>D:\appl\jenkins-node\jenkins\workspace\Multiple_ear_JAVA\Pipeline_test\target</wl.location>
+      <wl.location>C:\jenkins_installpath\workspace\Testing_Selenium\Pipeline_test\target</wl.location>
 	  
 	 
   </properties>
