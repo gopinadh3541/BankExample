@@ -39,10 +39,9 @@ node{
    {
    
     
-		//sh "mvn -f Pipeline_test/pom.xml deploy"
-		withCredentials([usernamePassword(credentialsId: 'By_Login', passwordVariable: 'password', usernameVariable: 'username')]) {
-	bat "mvn -f Pipeline_test/pom.xml package -Ddeploy.to.weblogic -Ddeploy.for.weblogic"
-	}
+	withCredentials([usernamePassword(credentialsId: 'Web_Logic', passwordVariable: 'password', usernameVariable: 'username')]) {
+		bat " mvn -f Pipeline_Test/pom.xml package -Ddeploy.to.weblogic -Ddeploy.for.weblogic"
+}
 
 }
   
